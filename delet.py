@@ -1,6 +1,3 @@
-import overwrite
-
-
 def edit_file():
 
     with open('file.txt', 'r', encoding='utf-8') as data:
@@ -17,6 +14,6 @@ def del_el(id):
         if id == i:
             r.pop(i)
         r[i-1] += '\n'
-    overwrite.overwriting_file(''.join(r))
+    return ''.join(r)
 
 
